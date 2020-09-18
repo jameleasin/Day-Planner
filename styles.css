@@ -1,11 +1,14 @@
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Questrial', sans-serif;
     font-size: 16px;
     line-height: 1;
     box-sizing: border-box;
 }
 
 textarea {
+    -webkit-box-shadow: inset 2px 2px 2px 0px #ddd;
+    -moz-box-shadow: inset 2px 2px 2px 0px #ddd;
+    box-shadow: inset 2px 2px 2px 0px #ddd;
     background: transparent;
     border: none;
     resize: none;
@@ -76,4 +79,31 @@ textarea {
     font-size: 25px;
     transition: all .3s ease-in-out;
     cursor: pointer;
+}
+
+
+/*These rules take effect when the browsers width is 767px or less*/
+
+@media screen and (max-width: 767px) {
+    .jumbotron {
+        height: 300px;
+    }
+    p {
+        font-size: smaller;
+    }
+}
+
+
+/*These rules take effect when the browsers width is 400px or less*/
+
+@media screen and (max-width: 400px) {
+    .jumbotron {
+        height: 300px;
+    }
+    .hourC {
+        margin-right: 0px;
+    }
+    .spanBtn {
+        border-radius: 25px;
+    }
 }
