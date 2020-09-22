@@ -3,6 +3,8 @@ body {
     font-size: 16px;
     line-height: 1;
     box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
 }
 
 textarea {
@@ -20,15 +22,11 @@ textarea {
 }
 
 .jumbotron {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     max-width: 80rem;
     margin: 0 auto;
     padding: 2rem;
-    border-bottom: 10px solid #000;
+    border-bottom: 5px solid #000;
 }
 
 .description {

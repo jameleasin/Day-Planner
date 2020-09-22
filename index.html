@@ -7,8 +7,9 @@
     <title>Day-Planner</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js" integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -18,9 +19,61 @@
         <hr />
         <br />
         <p class="lead">A simple calander app for scheduling you work days</p>
+        <br />
         <p id="currentDay" class="lead"></p>
     </header>
-    <div class="container"></div>
+    <div class="container">
+        <form class="time-block" id="9AM">
+            <div class="row time" id="9">
+                <div class="hour col-1">9AM</div>
+                <textarea class="col-10 description" id="scheduleInput"></textarea>
+                <button type="submit" data-event="none" class="col-1 saveBtn"><i class="far fa-save"></i> Save</button>
+            </div>
+            <div class="row time" id="9">
+                <div class="hour col-1">10AM</div>
+                <textarea class="col-10 description" id="scheduleInput"></textarea>
+                <button type="submit" data-event="none" class="col-1 saveBtn"><i class="far fa-save"></i> Save</button>
+            </div>
+            <div class="row time" id="9">
+                <div class="hour col-1">11AM</div>
+                <textarea class="col-10 description" id="scheduleInput"></textarea>
+                <button type="submit" data-event="none" class="col-1 saveBtn"><i class="far fa-save"></i> Save</button>
+            </div>
+            <div class="row time" id="9">
+                <div class="hour col-1">12AM</div>
+                <textarea class="col-10 description" id="scheduleInput"></textarea>
+                <button type="submit" data-event="none" class="col-1 saveBtn"><i class="far fa-save"></i> Save</button>
+            </div>
+            <div class="row time" id="9">
+                <div class="hour col-1">01PM</div>
+                <textarea class="col-10 description" id="scheduleInput"></textarea>
+                <button type="submit" data-event="none" class="col-1 saveBtn"><i class="far fa-save"></i> Save</button>
+            </div>
+            <div class="row time" id="9">
+                <div class="hour col-1">02PM</div>
+                <textarea class="col-10 description" id="scheduleInput"></textarea>
+                <button type="submit" data-event="none" class="col-1 saveBtn"><i class="far fa-save"></i> Save</button>
+            </div>
+            <div class="row time" id="9">
+                <div class="hour col-1">03PM</div>
+                <textarea class="col-10 description" id="scheduleInput"></textarea>
+                <button type="submit" data-event="none" class="col-1 saveBtn"><i class="far fa-save"></i> Save</button>
+            </div>
+            <div class="row time" id="9">
+                <div class="hour col-1">04PM</div>
+                <textarea class="col-10 description" id="scheduleInput"></textarea>
+                <button type="submit" data-event="none" class="col-1 saveBtn"><i class="far fa-save"></i> Save</button>
+            </div>
+            <div class="row time" id="9">
+                <div class="hour col-1">05PM</div>
+                <textarea class="col-10 description" id="scheduleInput"></textarea>
+                <button type="submit" data-event="none" class="col-1 saveBtn"><i class="far fa-save"></i> Save</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="planner.js"></script>
 </body>
 
