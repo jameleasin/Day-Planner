@@ -41,3 +41,21 @@ saveBtn.on("click", function() {
 
     localStorage.setItem(time, schedule);
 });
+
+function pastPresentFuture() {
+    hour = time.hours();
+    $(".time-block").each(function() {
+        var thisHour = parseInt($(this).attr("id"));
+
+        //add class of future present or past to the hours conditional to the current time
+        if (thisHour > hour) {
+            $(this).addClass("future");
+        } else if (thisHour === hour) {
+            $(this).addClass("present");
+        } else {
+            $($this).addClass("past")
+        }
+    })
+}
+
+pastPresentFuture();

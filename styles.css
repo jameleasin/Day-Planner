@@ -47,20 +47,20 @@ textarea {
 .hour {
     background-color: #fff;
     color: #000;
-    border-top: 1px dashed #000;
+    border-top: 1px solid #000;
 }
 
-.past {
+#past {
     background-color: #d3d3d3;
     color: #fff;
 }
 
-.present {
+#present {
     background-color: #ff6961;
     color: #000;
 }
 
-.future {
+#future {
     background-color: #77dd77;
     color: #000;
 }
@@ -86,7 +86,7 @@ textarea {
     .jumbotron {
         height: 300px;
     }
-    p {
+    div {
         font-size: smaller;
     }
 }
@@ -98,10 +98,10 @@ textarea {
     .jumbotron {
         height: 300px;
     }
-    .hourC {
+    .hour {
         margin-right: 0px;
     }
-    .spanBtn {
+    .saveBtn {
         border-radius: 25px;
     }
 }
