@@ -6,4 +6,4 @@ The planner is organised so that the past, present and future according to the c
 <br />
 This planner is easy to navigate with a save button next to every hours text area, which saves the users input to local storage, therefore saving it to the interface, making it easy for the user to visualise thier schedule for the working day.
 <br />
-Deploy application here: 
+Deploy application here: <p>https://jameleasin.github.io/Day-Planner/.</p>
