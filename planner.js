@@ -65,7 +65,8 @@ var myDay = [{
 
 ]
 
-// gets data for the header date
+// uses moment() to get time data for the header date and displays it in the header
+//moment() function runs before other code so the rest of the code is able to rely on the moment code
 function getHeaderDate() {
     var currentHeaderDate = moment().format('dddd, MMMM Do');
     $("#currentDay").text(currentHeaderDate);
@@ -106,14 +107,14 @@ myDay.forEach(function(thisHour) {
     });
     $(".container").append(hourRow);
 
-    // creates time field
+    // creates a div that the time is displayed inside of and gives a bootstrap attribute to the div
     var hourField = $("<div>")
         .text(`${thisHour.hour}${thisHour.meridiem}`)
         .attr({
             "class": "col-md-2 hour"
         });
 
-    // creates schdeduler data
+    // creates div for the schdeduler data then appends the data in the input area to the div then gives the div an attribute of the hour
     var hourPlan = $("<div>")
         .attr({
             "class": "col-md-9 description p-0"
@@ -121,6 +122,8 @@ myDay.forEach(function(thisHour) {
     var planData = $("<textarea>");
     hourPlan.append(planData);
     planData.attr("id", thisHour.id);
+
+    //adds classes to time according to the moment
     if (thisHour.time < moment().format("HH")) {
         planData.attr({
             "class": "past",
@@ -135,7 +138,7 @@ myDay.forEach(function(thisHour) {
         })
     }
 
-    // creates save button
+    // creates save button and adds bootstrap classes to the button, appends button to hour field
     var saveButton = $("<i class='far fa-save fa-lg'></i>")
     var savePlan = $("<button>")
         .attr({
